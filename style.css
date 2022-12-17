@@ -1,0 +1,208 @@
+/* Here I want to declare global variables*/
+:root{
+    --mono: "Oxygen mono", monospace;
+    --sans: Oxygen, sans-serif;
+  }
+
+  body{
+    font-family: var(--sans);
+    margin: 16px;
+    background-color: white;
+  }
+
+  #top-header {
+    /*we want the header to be at the center*/
+    text-align: center;
+    /*space to all sides*/
+    padding: 16px;
+   }
+
+  .logo-image{
+    width: 25%;
+  }
+
+  nav{
+    /* We use var() to select the mono definition on root*/
+    font-family: var(--mono);
+    /* To separate the two line items */
+    padding: 1rem;
+    /* Size of te font in the navbar */
+    font-size: 19px;
+  }
+
+  nav ul {
+    /* We quit the figure of the list items */
+    list-style-type: none;
+    margin: 0;
+    display: flex;
+    flex-flow: row wrap;
+    /* Also we can use only flex-direction: row*/
+    /*flex-direction: row;*/
+    /*Take the navbar to the center*/
+    justify-content: center;
+    /* Align the items vertically */
+    align-items: center;
+    /* Space between the items */
+    gap: 32px;
+  }
+
+  /*Now we will stylize the lings*/
+
+  nav a {
+    color: black;
+    /* We quit the line above the link*/
+    text-decoration: none;
+    /* display: block; */
+  }
+
+  nav a:hover {
+    color:orange;
+  }
+  
+
+  #btn-group .buttonlan {
+    background-color: #f9b775;
+    border: 1px solid orange;
+    color: black;
+    padding: 5px 15px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 15px;
+    cursor: pointer;
+    /* Make the demonstration without float to see that the buttons are in different lines*/
+    float: left; 
+  }
+
+  /* Prevent double borders */
+  #btn-group .buttonlan:not(:last-child) {
+    border-right: none;
+  }
+
+  /* Change the background to white when the cursor is over the link*/
+  #btn-group .buttonlan:hover {
+    background-color: #f9fdfa;
+  }
+
+  #searchbutton {
+    text-align: right;
+  }
+
+  .presimage{
+    position: relative;
+  }
+
+  .p-image{
+    width: 100%;
+    height: 450px;
+  }
+
+  .textimage{
+    position: absolute;
+    top: 300px;
+    left: 50px;
+    color: white;
+    font-family: var(--sans);
+    font-weight: 200;
+    font-size: 300%;
+   }
+
+  /* We start with the subtitles*/
+
+  h2 {
+    color:grey;
+    font-family: var(--mono);
+    font-size: 40px;
+  }
+
+  /*Image of perimeter institute*/
+
+  .perimeterimg{
+    width: 70%;
+    text-align: center;
+    border-radius: 20px;
+  }
+
+  /*Text of about us*/
+
+  #about{
+    color: black;
+    padding: 64px 16px;
+    font-size: 19px;
+  }
+
+  #areas {
+    /*flex in order to acomodate the content in flexbox*/
+    display: flex;
+    /* Everything is on the same high */
+    flex-flow: row wrap;
+    justify-content: space-between;
+    text-align: justify;
+    padding: 64px 16px;
+    font-size: 19px;
+    /*We need to all the content fill their boxes */
+    align-items: stretch;
+}
+
+/* We want the title to be upper*/
+.sftitle {
+    flex-basis: 100%;
+    text-align: left;
+}
+
+.story-title{
+    /*We can make the example without font weight*/
+    font-weight: normal;
+    font-size: 30px;
+    margin: 30px 0px;
+    text-align: left;
+}
+
+  /*all the images of study areas*/
+
+  .story-image{
+    width: 80%;
+    border-radius: 20px;
+    text-align: center;
+  }
+
+/*We go to the text of the areas*/
+
+.story-text{
+    /* Spacing between text lines */
+    line-height: 1.5;
+    font-size: 19px;
+}
+
+
+/*We accomodate the boxes of the areas*/
+
+.a, .b, .c, .d, .e, .f {
+    flex-basis: 30%;
+}
+
+/*We agregate links and style the lonks*/
+
+.story-title a {
+    font-family: var(--mono);
+    color: black;
+    /* We quit the line above the link*/
+    text-decoration: none;
+    display: block;
+  }
+
+  .story-title a:hover {
+    color:orange;
+  }
+
+  #connect{
+    font-size: 19px;
+  }
+
+  #fn #ln #email{
+    font-size: 19px;
+  }
+
+  footer{
+    color: grey;
+    text-align: center;
+  }
